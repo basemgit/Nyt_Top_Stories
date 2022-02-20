@@ -7,7 +7,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.basemibrahim.nyt_top_stories.data.Repository
 import com.basemibrahim.nyt_top_stories.data.model.TopStoriesHomeResponse
-import com.basemibrahim.photoslist.utils.NetworkResult
+import com.basemibrahim.nyt_top_stories.utils.NetworkResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

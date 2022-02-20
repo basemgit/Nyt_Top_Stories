@@ -15,7 +15,7 @@ class NewsAdapter : ListAdapter<Result,
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): NewsAdapter.NewsViewHolder {
+    ): NewsViewHolder {
         return NewsViewHolder(
             GridViewItemBinding.inflate(
                 LayoutInflater.from(parent.context)
@@ -23,7 +23,7 @@ class NewsAdapter : ListAdapter<Result,
         )
     }
 
-    override fun onBindViewHolder(holder: NewsAdapter.NewsViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
         val item = getItem(position)
         holder.bind(item)
     }

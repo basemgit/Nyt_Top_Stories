@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.basemibrahim.nyt_top_stories.data.model.TopStoriesHomeResponse
 import com.basemibrahim.nyt_top_stories.ui.NewsAdapter
-import com.basemibrahim.photoslist.utils.NetworkResult
 
 
 @BindingAdapter("list")
@@ -20,7 +19,7 @@ fun bindRecyclerView(recyclerView: RecyclerView, list: NetworkResult<TopStoriesH
 @BindingAdapter("title")
 fun bindTitle(textView: TextView, title: String?) {
     title?.let {
-        textView.text = title + "                                                   "
+        textView.text = title
     }
 }
 

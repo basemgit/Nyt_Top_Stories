@@ -1,4 +1,4 @@
-package com.basemibrahim.photoslist.utils
+package com.basemibrahim.nyt_top_stories.utils
 
 sealed class NetworkResult<T>(
     val data: T? = null,

@@ -1,4 +1,4 @@
-package com.basemibrahim.photoslist.utils
+package com.basemibrahim.nyt_top_stories.utils
 
 import android.content.Context
 import android.net.ConnectivityManager
@@ -7,7 +7,7 @@ import android.os.Build
 
 
 object Utils {
-
+    @Suppress("DEPRECATION")
     fun isNetworkAvailable(context: Context?): Boolean {
         if (context == null) return false
         val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager

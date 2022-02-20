@@ -1,6 +1,6 @@
 package com.basemibrahim.nyt_top_stories.data
 
-import com.basemibrahim.photoslist.utils.NetworkResult
+import com.basemibrahim.nyt_top_stories.utils.NetworkResult
 import retrofit2.Response
 
 abstract class BaseApiResponse {

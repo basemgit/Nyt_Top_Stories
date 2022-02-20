@@ -2,7 +2,7 @@ package com.basemibrahim.nyt_top_stories.data
 
 import com.basemibrahim.nyt_top_stories.data.model.TopStoriesHomeResponse
 import com.basemibrahim.nyt_top_stories.data.remote.RemoteDataSource
-import com.basemibrahim.photoslist.utils.NetworkResult
+import com.basemibrahim.nyt_top_stories.utils.NetworkResult
 import dagger.hilt.android.scopes.ActivityRetainedScoped
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

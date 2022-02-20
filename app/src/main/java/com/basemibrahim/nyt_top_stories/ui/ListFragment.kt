@@ -10,9 +10,9 @@ import androidx.fragment.app.viewModels
 import com.basemibrahim.nyt_top_stories.R
 import com.basemibrahim.nyt_top_stories.databinding.ListFragmentBinding
 import com.basemibrahim.nyt_top_stories.utils.Constants.Companion.NETWORK_TAG
+import com.basemibrahim.nyt_top_stories.utils.Utils
 import com.basemibrahim.nyt_top_stories.viewmodel.MainViewModel
-import com.basemibrahim.photoslist.utils.NetworkResult
-import com.basemibrahim.photoslist.utils.Utils
+import com.basemibrahim.nyt_top_stories.utils.NetworkResult
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -24,7 +24,7 @@ class ListFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = ListFragmentBinding.inflate(inflater)
         _binding.lifecycleOwner = this
         _binding.viewModel = mainViewModel
