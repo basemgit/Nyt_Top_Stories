@@ -6,6 +6,7 @@ import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.basemibrahim.nyt_top_stories.R
 import com.basemibrahim.nyt_top_stories.data.model.TopStoriesHomeResponse
 import com.basemibrahim.nyt_top_stories.ui.NewsAdapter
 
@@ -23,10 +24,20 @@ fun bindTitle(textView: TextView, title: String?) {
     }
 }
 
+@BindingAdapter("author")
+fun bindAuthor(textView: TextView, author: String?) {
+    author?.let {
+        textView.text = if (author.isNotEmpty()) author
+        else textView.context.resources.getString(R.string.unknown)
+    }
+}
 @BindingAdapter("imageUrl")
 fun bindImage(imgView: ImageView, imgUrl: String?) {
     if (!imgUrl.isNullOrEmpty()) {
-        imgView.load(imgUrl)
+        imgView.load(imgUrl) {
+            placeholder(R.drawable.ic_baseline_refresh_24)
+            error(R.drawable.ic_outline_broken_image_24)
+        }
         imgView.visibility = View.VISIBLE
     } else {
         imgView.visibility = View.GONE

@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Nyt_Top_Stories</string>
     <string name="no_internet">No Internet</string>
+    <string name="title">Title</string>
+    <string name="nty_top_stories">Nyt Top Stories</string>
+    <string name="published_by">Published By</string>
+    <string name="section">Section</string>
+    <string name="summary">Summary</string>
+    <string name="date">Date</string>
+    <string name="unknown">Unknown</string>
+    <string name="story_details">Story Details</string>
 </resources>
