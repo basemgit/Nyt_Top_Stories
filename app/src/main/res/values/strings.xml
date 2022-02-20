@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Nyt_Top_Stories</string>
+    <string name="no_internet">No Internet</string>
 </resources>
