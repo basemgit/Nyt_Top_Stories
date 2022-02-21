@@ -58,15 +58,18 @@ class ListFragment : Fragment() {
         mainViewModel.response.observe(viewLifecycleOwner) { response ->
             when (response) {
                 is NetworkResult.Success -> {
-//                    response.data?.let {
-//                        mainViewModel.saveResponseToDb(response.data)
-//                    }
                     _binding.pbDog.visibility = View.GONE
                 }
 
                 is NetworkResult.Error -> {
                     _binding.pbDog.visibility = View.GONE
                     Log.d(NETWORK_TAG, response.message.toString())
+                    Snackbar.make(
+                        _binding.root,
+                        resources.getString(R.string.went_wrong),
+                        Snackbar.LENGTH_SHORT
+                    )
+                        .show()
                 }
 
                 is NetworkResult.Loading -> {

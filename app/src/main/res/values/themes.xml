@@ -12,8 +12,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-
-
     </style>
     <style name="TitleTextStyle" parent="android:Widget.TextView">
         <item name="android:textStyle">bold</item>
@@ -41,5 +39,12 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
         <item name="android:textColor">@color/date_color</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 </resources>

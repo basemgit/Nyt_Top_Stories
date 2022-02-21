@@ -11,4 +11,5 @@
     <color name="author_color">#FF000000</color>
     <color name="dividerColor">#e0e0e0</color>
     <color name="date_color">#ababab</color>
+    <color name="background_alfa">#DE000000</color>
 </resources>

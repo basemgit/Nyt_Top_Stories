@@ -1,5 +1,6 @@
 package com.basemibrahim.nyt_top_stories.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -48,15 +49,21 @@ class DetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-            _binding.image.load(img) {
-                placeholder(R.drawable.ic_baseline_refresh_24)
-                error(R.drawable.ic_outline_broken_image_24)
-            }
+        _binding.image.load(img) {
+            placeholder(R.drawable.ic_baseline_refresh_24)
+            error(R.drawable.ic_outline_broken_image_24)
+        }
         _binding.titleTxt.text = title
         _binding.publishedByTxt.text = publishedBy
         _binding.sectionTxt.text = section
         _binding.summaryTxt.text = summary
         _binding.DateTxt.text = date
+        _binding.image.setOnClickListener {
+            val intent = Intent(requireContext(), ImageActivity::class.java)
+            intent.putExtra(IMG, img)
+            startActivity(intent)
+        }
     }
+
 
 }

@@ -115,7 +115,10 @@ dependencies {
     // Make Hilt generate code in the androidTest folder
     kaptAndroidTest "com.google.dagger:hilt-android-compiler:$hilt_version"
 
-
     implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation 'io.github.igreenwood.loupe:loupe:1.2.2'
+    // optional
+    implementation 'io.github.igreenwood.loupe:extensions:1.0.1'
 
 }

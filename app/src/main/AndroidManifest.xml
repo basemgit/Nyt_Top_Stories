@@ -27,6 +27,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.basemibrahim.nyt_top_stories.ui.ImageActivity"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            />
     </application>
 
 </manifest>

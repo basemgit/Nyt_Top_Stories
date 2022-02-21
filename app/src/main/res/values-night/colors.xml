@@ -2,5 +2,5 @@
 <resources>
     <color name="article_title_color">@color/purple_200</color>
     <color name="author_color">#FFFFFF</color>
-
+    <color name="background_alfa">#806E6C6C</color>
 </resources>

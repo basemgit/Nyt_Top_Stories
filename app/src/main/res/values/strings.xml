@@ -9,4 +9,6 @@
     <string name="date">Date</string>
     <string name="unknown">Unknown</string>
     <string name="story_details">Story Details</string>
+    <string name="went_wrong">something went wrong, Please try again later</string>
+    <string name="imageTransition">image_transition</string>
 </resources>
