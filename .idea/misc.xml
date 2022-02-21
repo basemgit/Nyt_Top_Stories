@@ -4,11 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android_Projects/ArcticFox/Nyt_Top_Stories/app/src/main/res/drawable-v24/ic_baseline_refresh_24.xml" value="0.12135416666666667" />
-        <entry key="..\:/Android_Projects/ArcticFox/Nyt_Top_Stories/app/src/main/res/layout/activity_image.xml" value="0.16770833333333332" />
+        <entry key="..\:/Android_Projects/ArcticFox/Nyt_Top_Stories/app/src/main/res/layout/activity_image.xml" value="0.176" />
         <entry key="..\:/Android_Projects/ArcticFox/Nyt_Top_Stories/app/src/main/res/layout/activity_main.xml" value="0.12239583333333333" />
         <entry key="..\:/Android_Projects/ArcticFox/Nyt_Top_Stories/app/src/main/res/layout/details_fragment.xml" value="0.2" />
         <entry key="..\:/Android_Projects/ArcticFox/Nyt_Top_Stories/app/src/main/res/layout/grid_view_item.xml" value="0.25153374233128833" />
         <entry key="..\:/Android_Projects/ArcticFox/Nyt_Top_Stories/app/src/main/res/layout/list_fragment.xml" value="0.264" />
+        <entry key="..\:/Android_Projects/ArcticFox/Nyt_Top_Stories/app/src/main/res/xml/fileprovider.xml" value="0.1" />
       </map>
     </option>
   </component>
